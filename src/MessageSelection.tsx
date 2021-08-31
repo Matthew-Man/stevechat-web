@@ -12,11 +12,11 @@ export default function MessageSelection() {
       borderColor="gray.200"
     >
       <Flex>
-        <Heading size="md" fontWeight="semibold">Chats</Heading>
+        <Heading size="md" fontWeight="semibold" color="gray.800">Chats</Heading>
         <Spacer />
         <HStack spacing="20px">
-          <Icon as={SearchIcon} />
-          <Icon as={AddIcon} />
+          <Icon as={SearchIcon} color="gray.500" _hover={{ color: "gray.600" }} />
+          <Icon as={AddIcon} color="blue.500" _hover={{ color: "blue.800" }} />
         </HStack>
       </Flex>
     </Box>
