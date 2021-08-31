@@ -5,23 +5,26 @@ export default function ConversationListItem() {
     <Box
       h="90px"
       w="100%"
-      p="15px"
+      p="20px"
       bgColor="white"
-      _hover={{ bgColor: "gray.100", transition: "500ms" }}
+      _hover={{ bgColor: "gray.50", transition: "500ms" }}
       borderRadius={8}
     >
       <HStack>
         <Image
-          w="60px"
-          h="60px"
-          borderRadius="5px"
+          w="50px"
+          h="50px"
+          borderRadius="16px"
           objectFit="cover"
           src="https://images.unsplash.com/photo-1520341280432-4749d4d7bcf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80"
           alt="User photo"
         />
-        <VStack align="flex-start" pl="10px">
+        <VStack align="flex-start" pl="10px" spacing={1} w="80%">
           <Heading size="xs">Timothy Placename</Heading>
-          <Text fontSize="14px" color="gray.600">You: Lorem ipsum this is</Text>
+          <HStack w="100%" justify="space-between">
+            <Text fontSize="14px" color="gray.600">You: Lorem ipsum this is</Text>
+            <Text fontSize="14px" color="gray.500" fontWeight="medium" justifyItems="right">12m</Text>
+          </HStack>
         </VStack>
       </HStack>
     </Box>
