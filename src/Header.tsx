@@ -4,8 +4,8 @@ import { GrNotification } from "react-icons/gr"
 
 export default function Header() {
   return (
-    <Box p="0px 20px" borderBottom={1} borderStyle="solid" borderColor="gray.200">
-      <Flex h="60px" align="center" >
+    <Box p="0px 20px" borderBottom={1} borderStyle="solid" borderColor="gray.200" bgColor="white">
+      <Flex h="10vh" align="center" >
         <Link href="/">
           <HStack>
             <Icon as={AiFillMessage} w={10} h={10} color="orange.300" />
