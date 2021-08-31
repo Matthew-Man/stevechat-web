@@ -7,6 +7,7 @@ export default function ConversationListItem() {
       w="100%"
       p="20px"
       bgColor="white"
+      cursor="pointer"
       _hover={{ bgColor: "gray.50", transition: "500ms" }}
       borderRadius={8}
     >
@@ -22,8 +23,8 @@ export default function ConversationListItem() {
         <VStack align="flex-start" pl="10px" spacing={1} w="80%">
           <Heading size="xs">Timothy Placename</Heading>
           <HStack w="100%" justify="space-between">
-            <Text fontSize="14px" color="gray.600">You: Lorem ipsum this is</Text>
-            <Text fontSize="14px" color="gray.500" fontWeight="medium" justifyItems="right">12m</Text>
+            <Text fontSize="13px" color="gray.600" fontWeight="medium">You: Lorem ipsum this is</Text>
+            <Text fontSize="12px" color="gray.500" fontWeight="semibold">12m</Text>
           </HStack>
         </VStack>
       </HStack>
