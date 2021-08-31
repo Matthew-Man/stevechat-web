@@ -1,7 +1,13 @@
 import Header from "../src/Header";
+import LayoutFullscreen from "../src/LayoutFullscreen";
 
 export default function Home() {
   return (
-    <Header />
+    <LayoutFullscreen>
+      {{
+        header: <Header />,
+        body: <></>
+      }}
+    </LayoutFullscreen>
   )
 }
