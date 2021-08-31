@@ -1,5 +1,6 @@
 import { AddIcon, SearchIcon } from "@chakra-ui/icons";
-import { Box, Flex, Heading, HStack, Icon, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, Icon, Spacer, VStack } from "@chakra-ui/react";
+import ConversationListItem from "./ConversationListItem";
 
 export default function MessageSelection() {
   return (
@@ -19,6 +20,10 @@ export default function MessageSelection() {
           <Icon as={AddIcon} color="blue.500" _hover={{ color: "blue.800" }} />
         </HStack>
       </Flex>
+      <VStack spacing="10px" mt="40px">
+        <ConversationListItem />
+        <ConversationListItem />
+      </VStack>
     </Box>
   )
 }
