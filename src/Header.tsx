@@ -8,8 +8,8 @@ export default function Header() {
       <Flex h="10vh" align="center" >
         <Link href="/">
           <HStack>
-            <Icon as={AiFillMessage} w={10} h={10} color="orange.300" />
-            <Heading fontSize="24px" fontWeight="medium">SteveChat Web</Heading>
+            <Icon as={AiFillMessage} w={10} h={10} color="blue.300" />
+            <Heading fontSize="24px" fontWeight="medium" color="blue.800">SteveChat Web</Heading>
           </HStack>
         </Link>
         <Spacer />

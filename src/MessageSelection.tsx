@@ -12,7 +12,7 @@ export default function MessageSelection() {
       borderColor="gray.200"
     >
       <Flex>
-        <Heading size="md" fontWeight="medium">Chats</Heading>
+        <Heading size="md" fontWeight="semibold">Chats</Heading>
         <Spacer />
         <HStack spacing="20px">
           <Icon as={SearchIcon} />
