@@ -18,7 +18,7 @@ export default function MessageBubble({ isMyMessage = false }: MessageBubbleProp
           color={isMyMessage ? "white" : "gray.700"}
           width="90%"
           borderRadius="15px">
-          <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+          <Text textAlign={isMyMessage ? "right" : "left"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
         </Box>
         {isMyMessage && <MessageBubbleProfileImage />}
       </HStack>
