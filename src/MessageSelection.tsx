@@ -21,7 +21,7 @@ export default function MessageSelection() {
         </HStack>
       </Flex>
       <VStack spacing="10px" mt="40px">
-        <ConversationListItem />
+        <ConversationListItem isSelectedConversation />
         <ConversationListItem />
       </VStack>
     </Box>

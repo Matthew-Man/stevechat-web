@@ -1,12 +1,16 @@
 import { Box, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 
-export default function ConversationListItem() {
+interface ConversationListItemProps {
+  isSelectedConversation?: boolean;
+}
+
+export default function ConversationListItem({ isSelectedConversation }: ConversationListItemProps) {
   return (
     <Box
       h="90px"
       w="100%"
       p="20px"
-      bgColor="white"
+      bgColor={isSelectedConversation ? "gray.100" : "white"}
       cursor="pointer"
       _hover={{ bgColor: "gray.50", transition: "500ms" }}
       borderRadius={8}
