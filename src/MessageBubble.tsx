@@ -8,7 +8,8 @@ export default function MessageBubble({ isMyMessage = false }: MessageBubbleProp
   return (
     <Box
       maxWidth="60%"
-      m="10px 0px">
+      m="10px 0px"
+      float={isMyMessage ? "right" : "left"}>
       <HStack spacing="10px" align="flex-start">
         {!isMyMessage && <MessageBubbleProfileImage />}
         <Box
