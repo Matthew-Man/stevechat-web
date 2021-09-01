@@ -1,4 +1,5 @@
 import { Box, Grid } from "@chakra-ui/react";
+import ChatConversation from "./ChatConversation";
 import MessageSelection from "./MessageSelection";
 
 export default function MessageView() {
@@ -7,7 +8,7 @@ export default function MessageView() {
       <Box display={{ base: "none", md: "block" }} minW="400px">
         <MessageSelection />
       </Box>
-      <Box bgColor="white" />
+      <ChatConversation />
     </Grid>
   )
 }
