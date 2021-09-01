@@ -1,4 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import MessageBubble from "./MessageBubble";
 
 export default function ChatConversation() {
   return (
@@ -10,6 +11,9 @@ export default function ChatConversation() {
           color="blue.400"
         >Welcome to your personal Stevechat conversation</Heading>
         <Text mt="6px" fontSize="14px" color="#6e8a9c" fontWeight="med">Conversation description placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+      </Box>
+      <Box mt="40px">
+        <MessageBubble />
       </Box>
     </Box>
   )
