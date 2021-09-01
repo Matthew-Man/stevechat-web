@@ -1,13 +1,25 @@
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 
-export default function MessageBubble() {
+interface MessageBubbleProps {
+  isMyMessage?: boolean;
+}
+
+export default function MessageBubble({ isMyMessage = false }: MessageBubbleProps) {
   return (
-    <Box maxWidth="60%" >
+    <Box
+      maxWidth="60%"
+      m="10px 0px">
       <HStack spacing="10px" align="flex-start">
-        <MessageBubbleProfileImage />
-        <Box p="14px" bgColor="gray.100" color="gray.700" width="90%" borderRadius="15px">
+        {!isMyMessage && <MessageBubbleProfileImage />}
+        <Box
+          p="14px"
+          bgColor={isMyMessage ? "blue.500" : "gray.100"}
+          color={isMyMessage ? "white" : "gray.700"}
+          width="90%"
+          borderRadius="15px">
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
         </Box>
+        {isMyMessage && <MessageBubbleProfileImage />}
       </HStack>
     </Box>
   )

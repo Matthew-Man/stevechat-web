@@ -14,6 +14,7 @@ export default function ChatConversation() {
       </Box>
       <Box mt="40px">
         <MessageBubble />
+        <MessageBubble isMyMessage />
       </Box>
     </Box>
   )
