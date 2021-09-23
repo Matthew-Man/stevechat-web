@@ -4,11 +4,11 @@ import MessageSelection from "./MessageSelection";
 
 export default function MessageView() {
   return (
-    <Grid mt="80px" templateColumns={{ base: "1fr", md: "2fr 5fr" }}>
+    <Grid mt="80px" h="auto" templateColumns={{ base: "1fr", md: "2fr 5fr" }}>
       <Box display={{ base: "none", md: "block" }} minW="400px">
         <MessageSelection />
       </Box>
       <ChatConversation />
     </Grid>
-  )
+  );
 }
