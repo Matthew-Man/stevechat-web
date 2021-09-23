@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import { ReactNode } from 'react';
+import Head from "next/head";
+import { ReactNode } from "react";
 
-import { Box } from '@chakra-ui/react';
+import { Box } from "@chakra-ui/react";
 
 interface Props {
   title?: string;
